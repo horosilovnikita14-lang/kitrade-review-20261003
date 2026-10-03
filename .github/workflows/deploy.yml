@@ -23,6 +23,7 @@ jobs:
           mkdir public
           cat preview.tar.gz.part* > /tmp/preview.tar.gz
           tar -xzf /tmp/preview.tar.gz -C public
+          tar -xzf preview-update-20261004.tar.gz -C public
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
